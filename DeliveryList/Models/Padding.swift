@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* Padding
+    This class contains padding settings for view constraints
+ */
 struct Padding {
     public static let standard: CGFloat = 30.0
 }

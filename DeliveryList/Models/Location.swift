@@ -8,6 +8,9 @@
 
 import Foundation
 
+/* Location
+ This entity contains the location data for displaying annotation on the map
+ */
 struct Location: Codable, Equatable {
     public let  lat: Double
     public let  lng: Double

@@ -39,13 +39,22 @@ class DeliveryListUITest: XCTestCase {
     
     func testTapOnCell() {
         let table = XCUIApplication().tables.firstMatch
+        let exists = NSPredicate(format: "exists == 1")
+        expectation(for: exists, evaluatedWith: table, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
         let cell = table.cells.firstMatch
         cell.tap()
     }
     
     func testMapInteraction() {
         let table = XCUIApplication().tables.firstMatch
+        var exists = NSPredicate(format: "exists == 1")
+        expectation(for: exists, evaluatedWith: table, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         let cell = table.cells.firstMatch
+        exists = NSPredicate(format: "exists == 1")
+        expectation(for: exists, evaluatedWith: cell, handler: nil)
+        waitForExpectations(timeout: 15, handler: nil)
         cell.tap()
         let map = XCUIApplication().maps.firstMatch
         map.tap()

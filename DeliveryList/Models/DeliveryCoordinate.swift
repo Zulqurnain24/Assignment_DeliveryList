@@ -9,6 +9,9 @@
 import UIKit
 import MapKit
 
+/* DeliveryCoordinate
+ This is the class responsible for displaying delivery coordinates
+ */
 class DeliveryCoordinate: NSObject, MKAnnotation{
     var identifier = "delivery location"
     var title: String?

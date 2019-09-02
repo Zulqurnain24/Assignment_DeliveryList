@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* Colors
+ This class contains our color pallette
+ */
 public struct Colors {
     static let white = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
     static let lightGray = UIColor(red: 193/255, green: 193/255, blue: 193/255, alpha: 1.0)

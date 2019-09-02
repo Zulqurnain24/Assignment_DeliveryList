@@ -8,6 +8,29 @@
 
 import Foundation
 
+/* Enums
+ This class contains the enums
+ */
+
+
+// swift result type
+enum ResultType<T> {
+    case Success(T)
+    case Failure(e: Error)
+}
+
+// Error for unknown case
+enum JSONDecodingError: Error, LocalizedError {
+    case unknownError
+    
+    public var errorDescription: String? {
+        switch self {
+        case .unknownError:
+            return NSLocalizedString("Unknown Error occured", comment: "")
+        }
+    }
+}
+
 //IntConstants Enum
 enum IntConstants: Int {
     typealias RawValue = Int

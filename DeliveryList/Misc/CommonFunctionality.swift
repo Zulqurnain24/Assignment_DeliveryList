@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* CommonFunctionality
+ This contains the miscellaneous functionalities like presenting Alert and resizing the image
+ */
 class CommonFunctionality {
     
     static func presentAlert(viewController:UIViewController, title:String, message:String, callbackOnAffirmation: (() -> Void)? = nil, callbackOnNegation: (() -> Void)? = nil) {

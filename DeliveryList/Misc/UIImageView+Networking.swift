@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* UIImageView
+ This extension contains the mechanism for downloading the image asynchronously
+ */
 extension UIImageView {
     func imageFromServerURL(urlString: String, completionHandler: @escaping () -> Void) {
         

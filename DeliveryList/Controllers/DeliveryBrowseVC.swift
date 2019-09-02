@@ -22,6 +22,9 @@ protocol DeliveryBrowseVCProtocol {
     func getActivityIndicator() -> UIActivityIndicatorView
 }
 
+/* DeliveryBrowseVC
+ This is the UIViewcontroller class responsible for displaying the initial delivery list to the user
+ */
 class DeliveryBrowseVC: UIViewController {
     private let webserviceManager = WebserviceManager()
     private var refreshBarButton: UIBarButtonItem!

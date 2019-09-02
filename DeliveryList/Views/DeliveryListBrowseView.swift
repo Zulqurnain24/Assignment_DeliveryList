@@ -11,6 +11,9 @@ protocol DeliveryListBrowseViewProtocol {
     func setupTable(dataSource: UITableViewDataSource, delegate: UITableViewDelegate)
 }
 
+/* DeliveryListBrowseView
+ This is the view which is used in DeliveryListBrowseView ViewController
+ */
 class DeliveryListBrowseView: UIView, DeliveryListBrowseViewProtocol {
     internal let table: UITableView = {
         let table = UITableView()

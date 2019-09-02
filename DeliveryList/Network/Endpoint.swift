@@ -8,6 +8,9 @@
 
 import Foundation
 
+/* Endpoint
+ This class houses all endpoint logic
+ */
 public let baseUrl:String = "https://mock-api-mobile.dev.lalamove.com/"
 
 public enum Endpoint: String {

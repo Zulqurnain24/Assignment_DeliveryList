@@ -8,8 +8,15 @@
 
 import SystemConfiguration
 
-public class Reachability {
-    
+protocol ReachabilityProtocol {
+    static func isConnectedToNetwork() -> Bool
+}
+
+/* Reachability
+ This class is responsible for detecting availability of internet via wifi or cellular network
+ */
+public class Reachability: ReachabilityProtocol {
+
     class func isConnectedToNetwork() -> Bool {
         
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))

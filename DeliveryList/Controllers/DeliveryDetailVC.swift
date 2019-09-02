@@ -14,6 +14,9 @@ protocol DeliveryDetailVCProtocol {
     static func getDeliveryDetailVC(delivery: Delivery) -> DeliveryDetailVC
 }
 
+/* DeliveryDetailVC
+ This is the UIViewcontroller class responsible for displaying the delivery detail to the user
+ */
 class DeliveryDetailVC: UIViewController {
     var delivery: Delivery!
 

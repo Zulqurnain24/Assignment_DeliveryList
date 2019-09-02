@@ -12,6 +12,9 @@ protocol DeliveryCellProtocol {
     func configure( description: String, uRLString:String, _ completionHandler: (() -> Void)?)
 }
 
+/* DeliveryCell
+ This is the UITableViewCell which is used in DeliveryListBrowseView Tableview
+ */
 class DeliveryCell: UITableViewCell, DeliveryCellProtocol {
     
     internal var descriptionLabel: UILabel = {

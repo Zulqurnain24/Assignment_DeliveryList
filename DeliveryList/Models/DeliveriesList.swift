@@ -8,6 +8,9 @@
 
 import Foundation
 
+/* DeliveriesList
+ This class is used to house Delivery objects in order to display them in the tableview
+ */
 struct DeliveriesList: Codable {
     var deliveries: [Delivery]
     init() {

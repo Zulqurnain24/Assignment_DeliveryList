@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* UIView
+ This extension contains method for enabling the AutoresizingMaskIntoConstraints
+ */
 extension UIView {
     func enableAutoLayout() {
         translatesAutoresizingMaskIntoConstraints = false

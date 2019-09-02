@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* ScreenDimensions
+ This class stores the screen dimensions
+ */
 struct ScreenDimensions {
     static let screenSize:CGRect = UIScreen.main.bounds
     static let width:CGFloat = screenSize.width

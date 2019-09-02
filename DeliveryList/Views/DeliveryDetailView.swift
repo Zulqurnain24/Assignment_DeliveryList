@@ -16,6 +16,9 @@ protocol DeliveryDetailViewProtocol {
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation)
 }
 
+/* DeliveryDetailView
+ This is the UIView which is used to display the delivery detail
+ */
 class DeliveryDetailView: UIView, CLLocationManagerDelegate, DeliveryDetailViewProtocol  {
     
     internal let distanceSpan: Double = 500

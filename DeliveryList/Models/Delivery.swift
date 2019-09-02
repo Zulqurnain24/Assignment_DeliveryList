@@ -8,6 +8,9 @@
 
 import Foundation
 
+/* Delivery
+ This entity contains the delivery data
+ */
 struct Delivery: Codable, Equatable {
 
     public let  id: Int

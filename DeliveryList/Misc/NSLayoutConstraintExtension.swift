@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* NSLayoutConstraint
+ This extension contains method for activating the NSLayoutConstraints
+ */
 extension NSLayoutConstraint {
     @discardableResult func activate() -> NSLayoutConstraint {
         isActive = true
